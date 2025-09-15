@@ -1,0 +1,166 @@
+.message {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 80%;
+  animation: fadeInUp 0.3s ease-out;
+}
+
+.message.user {
+  align-self: flex-end;
+  flex-direction: row-reverse;
+}
+
+.message-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: white;
+  flex-shrink: 0;
+  font-size: 12px;
+}
+
+.user-avatar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.ai-avatar {
+  background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+}
+
+.message-content {
+  background: #f8fafc;
+  padding: 12px 26px;
+  border-radius: 18px;
+  position: relative;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.message.user .message-content {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.message.ai .message-content {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  color: #334155;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .message {
+    max-width: 90%;
+  }
+
+  .message-avatar {
+    width: 32px;
+    height: 32px;
+    font-size: 10px;
+  }
+}
+
+.tool-calls {
+  margin-top: 12px;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 12px;
+}
+
+.tool-call {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 8px;
+}
+
+.tool-header {
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 8px;
+}
+
+.tool-name {
+  font-size: 14px;
+}
+
+.tool-args {
+  margin-bottom: 8px;
+}
+
+.tool-args strong {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.tool-args pre {
+  background: #f1f5f9;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  margin-top: 4px;
+  overflow-x: auto;
+}
+
+.tool-result {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 8px;
+}
+
+.tool-result strong {
+  font-size: 12px;
+  color: #059669;
+}
+
+.result-content {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 4px;
+  font-size: 13px;
+  color: #15803d;
+  white-space: pre-wrap;
+}
+
+.reasoning {
+  margin-top: 12px;
+  padding: 12px;
+  background: #fef3c7;
+  border: 1px solid #fbbf24;
+  border-radius: 8px;
+}
+
+.reasoning strong {
+  color: #92400e;
+  font-size: 12px;
+}
+
+.reasoning-content {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #78350f;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.message.user .tool-calls,
+.message.user .reasoning {
+  display: none; /* Hide tool calls and reasoning for user messages */
+}
+

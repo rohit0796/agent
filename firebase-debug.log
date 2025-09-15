@@ -1,0 +1,90 @@
+[debug] [2025-09-15T10:07:15.262Z] ----------------------------------------------------------------------
+[debug] [2025-09-15T10:07:15.265Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\rsahu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-09-15T10:07:15.265Z] CLI Version:   14.16.0
+[debug] [2025-09-15T10:07:15.265Z] Platform:      win32
+[debug] [2025-09-15T10:07:15.265Z] Node Version:  v24.7.0
+[debug] [2025-09-15T10:07:15.265Z] Time:          Mon Sep 15 2025 15:37:15 GMT+0530 (India Standard Time)
+[debug] [2025-09-15T10:07:15.265Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-09-15T10:07:15.267Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-09-15T10:07:15.284Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-15T10:07:15.284Z] > authorizing via signed-in user (rrohitkumarsahu2002@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\rsahu\Python_practice\LangGraph_Agent\frontend
+
+[debug] [2025-09-15T10:07:15.650Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: unable to get local issuer certificate
+[warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
+[debug] [2025-09-15T10:07:15.651Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-09-15T10:07:26.034Z] Using project from CLI flag: agent-e42bc
+[debug] [2025-09-15T10:07:26.035Z] Checked if tokens are valid: true, expires at: 1757934425015
+[debug] [2025-09-15T10:07:26.035Z] Checked if tokens are valid: true, expires at: 1757934425015
+[debug] [2025-09-15T10:07:26.036Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/agent-e42bc [none]
+[debug] [2025-09-15T10:07:26.818Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/agent-e42bc 403
+[debug] [2025-09-15T10:07:26.818Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/agent-e42bc {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-09-15T10:07:26.819Z] Request to https://firebase.googleapis.com/v1beta1/projects/agent-e42bc had HTTP Error: 403, The caller does not have permission
+[debug] [2025-09-15T10:07:27.009Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/agent-e42bc had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\rsahu\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\rsahu\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project agent-e42bc. Please make sure the project exists and your account has permission to access it.
+[debug] [2025-09-15T10:09:00.100Z] ----------------------------------------------------------------------
+[debug] [2025-09-15T10:09:00.104Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\rsahu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-09-15T10:09:00.104Z] CLI Version:   14.16.0
+[debug] [2025-09-15T10:09:00.104Z] Platform:      win32
+[debug] [2025-09-15T10:09:00.104Z] Node Version:  v24.7.0
+[debug] [2025-09-15T10:09:00.104Z] Time:          Mon Sep 15 2025 15:39:00 GMT+0530 (India Standard Time)
+[debug] [2025-09-15T10:09:00.104Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-09-15T10:09:00.107Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-09-15T10:09:00.128Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-15T10:09:00.128Z] > authorizing via signed-in user (rrohitkumarsahu2002@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\rsahu\Python_practice\LangGraph_Agent\frontend
+
+[debug] [2025-09-15T10:09:00.547Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: unable to get local issuer certificate
+[warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
+[debug] [2025-09-15T10:09:00.548Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-09-15T10:09:07.878Z] Using project from CLI flag: agent-e42bc
+[debug] [2025-09-15T10:09:07.879Z] Checked if tokens are valid: true, expires at: 1757934425015
+[debug] [2025-09-15T10:09:07.880Z] Checked if tokens are valid: true, expires at: 1757934425015
+[debug] [2025-09-15T10:09:07.880Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/agent-e42bc [none]
+[debug] [2025-09-15T10:09:08.335Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/agent-e42bc 403
+[debug] [2025-09-15T10:09:08.335Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/agent-e42bc {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-09-15T10:09:08.336Z] Request to https://firebase.googleapis.com/v1beta1/projects/agent-e42bc had HTTP Error: 403, The caller does not have permission
+[debug] [2025-09-15T10:09:08.526Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/agent-e42bc had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\rsahu\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\rsahu\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project agent-e42bc. Please make sure the project exists and your account has permission to access it.
