@@ -1,7 +1,7 @@
 // Dummy AI API service
 export const callAIAPI = async (message, sessionId = 'default') => {
   try {
-    const response = await fetch("http://10.128.123.249:8000/send_message", {
+    const response = await fetch("https://10.128.123.249:8000/send_message", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -9,7 +9,6 @@ export const callAIAPI = async (message, sessionId = 'default') => {
       body: JSON.stringify({
         message: message,
         session_id: sessionId,
-        referrerPolicy: "unsafe-url"
       })
     });
 
@@ -28,6 +27,7 @@ export const callAIAPI = async (message, sessionId = 'default') => {
     throw error;
   }
 };
+
 
 
 
