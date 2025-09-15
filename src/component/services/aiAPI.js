@@ -8,7 +8,8 @@ export const callAIAPI = async (message, sessionId = 'default') => {
       },
       body: JSON.stringify({
         message: message,
-        session_id: sessionId
+        session_id: sessionId,
+        referrerPolicy: "unsafe-url"
       })
     });
 
@@ -27,6 +28,7 @@ export const callAIAPI = async (message, sessionId = 'default') => {
     throw error;
   }
 };
+
 
 
 
